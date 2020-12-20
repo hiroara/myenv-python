@@ -28,7 +28,7 @@ RUN curl https://pyenv.run | bash && \
     echo 'export PATH="/root/.pyenv/bin:$PATH"' >> $HOME/.bashrc && \
     echo 'eval "$(pyenv init -)"' >> $HOME/.bashrc && \
     echo 'eval "$(pyenv virtualenv-init -)"' >> $HOME/.bashrc
-ARG PYTHON_VERSION=3.9.0
+ARG PYTHON_VERSION=3.7.9
 RUN $HOME/.pyenv/bin/pyenv install $PYTHON_VERSION && \
     $HOME/.pyenv/bin/pyenv global $PYTHON_VERSION
 
