@@ -32,7 +32,7 @@ ARG PYTHON_VERSION=3.9.0
 RUN $HOME/.pyenv/bin/pyenv install $PYTHON_VERSION && \
     $HOME/.pyenv/bin/pyenv global $PYTHON_VERSION
 
-COPY ./python/scripts/init.sh /tmp/python-init.sh
+COPY ./scripts/init.sh /tmp/python-init.sh
 
 ENTRYPOINT ["/tmp/python-init.sh"]
 CMD ["/bin/bash", "--login"]
