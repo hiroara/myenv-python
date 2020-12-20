@@ -1,4 +1,4 @@
-FROM hiroara/myenv:plain
+FROM hiroara/myenv:latest
 
 # Build deps
 ENV TZ=Asia/Tokyo
